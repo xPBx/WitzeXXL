@@ -5,24 +5,33 @@
     android:background="#68b4ff"
     android:id="@+id/background">
 
-    <TextView android:id="@+id/WitzeXXL" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/WitzeXL"
-        android:textSize="35dp"
-        android:textColor="@color/black_86p"
-        android:layout_marginTop="53dp"
-        android:typeface="monospace"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView"
-        android:layout_below="@+id/WitzeXXL"
+        android:id="@+id/start"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp" />
+        android:src="@drawable/start" />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_marginTop="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button2"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible" />
 </RelativeLayout>
